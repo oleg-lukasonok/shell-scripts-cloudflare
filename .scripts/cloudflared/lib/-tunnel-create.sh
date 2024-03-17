@@ -20,5 +20,8 @@ _cloudflared_tunnel_create() {
     fi
     _loggers_info "${FUNCTION_NAME}" "CLOUDFLARED_TUNNEL_NAME: ${CLOUDFLARED_TUNNEL_NAME}"
 
-    # cloudflared tunnel create
+    local RESPONSE=$(
+        cloudflared tunnel create --output json "${CLOUDFLARED_TUNNEL_NAME}"
+    )
+    echo "${RESPONSE}" >"${DIR_CLOUDFLARED_LOCAL_STORAGE}/${CLOUDFLARED_TUNNEL_NAME}.json"
 }
