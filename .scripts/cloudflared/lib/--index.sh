@@ -9,13 +9,13 @@
 #
 #       --> passed parameters are read & exported environment variables
 #
-. ./.scripts/claudflared/lib/--env-vars-reader.sh
+. ./.scripts/cloudflared/lib/--env-vars-reader.sh
 #
 #       --> required environment variables are validated for existance
 #
-. ./.scripts/claudflared/lib/--env-vars-validator.sh
+. ./.scripts/cloudflared/lib/--env-vars-validator.sh
 #
 #       --> available functions are imported/exported
 #
-. ./.scripts/claudflared/lib/--index-api.sh
+. ./.scripts/cloudflared/lib/--index-api.sh
 # -------------------------------------------------------------------------------------

@@ -11,9 +11,9 @@
 
 . ./.scripts/os-manager/lib/--index.sh
 
-_claudflared_package_info() {
-    local FUNCTION_NAME="_claudflared_package_info"
+_cloudflared_package_info() {
+    local FUNCTION_NAME="_cloudflared_package_info"
     _loggers_info "${FUNCTION_NAME}"
 
-    _osManager_packageInfo "nvm"
+    _osManager_packageInfo "cloudflared"
 }

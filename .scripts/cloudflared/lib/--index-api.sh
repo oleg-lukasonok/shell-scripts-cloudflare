@@ -7,6 +7,6 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/claudflared/lib/-package-info.sh
-. ./.scripts/claudflared/lib/-package-install.sh
-. ./.scripts/claudflared/lib/-package-uninstall.sh
+. ./.scripts/cloudflared/lib/-package-info.sh
+. ./.scripts/cloudflared/lib/-package-install.sh
+. ./.scripts/cloudflared/lib/-package-uninstall.sh

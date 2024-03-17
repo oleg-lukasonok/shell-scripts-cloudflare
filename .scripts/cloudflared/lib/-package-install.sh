@@ -80,8 +80,8 @@ __debian_addAptRepository() {
     fi
 }
 
-_claudflared_package_install() {
-    local FUNCTION_NAME="_claudflared_package_install"
+_cloudflared_package_install() {
+    local FUNCTION_NAME="_cloudflared_package_install"
     _loggers_info "${FUNCTION_NAME}"
 
     if
@@ -91,5 +91,5 @@ _claudflared_package_install() {
         __debian_addAptRepository
     fi
 
-    _osManager_packageInstall "claudflared"
+    _osManager_packageInstall "cloudflared"
 }

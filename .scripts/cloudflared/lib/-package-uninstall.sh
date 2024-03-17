@@ -11,9 +11,9 @@
 
 . ./.scripts/os-manager/lib/-package-uninstall.sh
 
-_claudflared_package_uninstall() {
-    local FUNCTION_NAME="_claudflared_package_uninstall"
+_cloudflared_package_uninstall() {
+    local FUNCTION_NAME="_cloudflared_package_uninstall"
     _loggers_info "${FUNCTION_NAME}"
 
-    _osManager_packageUninstall "claudflared"
+    _osManager_packageUninstall "cloudflared"
 }
