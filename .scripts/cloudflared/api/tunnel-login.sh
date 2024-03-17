@@ -7,8 +7,6 @@
 #
 # -------------------------------------------------------------------------------------
 
-. ./.scripts/cloudflared/lib/-package-info.sh
-. ./.scripts/cloudflared/lib/-package-install.sh
-. ./.scripts/cloudflared/lib/-package-uninstall.sh
+. ./.scripts/cloudflared/lib/--index.sh
 
-. ./.scripts/cloudflared/lib/-tunnel-login.sh
+_cloudflared_tunnel_login
