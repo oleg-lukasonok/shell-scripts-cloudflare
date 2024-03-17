@@ -9,8 +9,6 @@
 
 . ./.scripts/loggers/lib/--index-api.sh
 
-. ./.scripts/os-manager/lib/-package-uninstall.sh
-
 _cloudflared_tunnel_login() {
     local FUNCTION_NAME="_cloudflared_tunnel_login"
     _loggers_info "${FUNCTION_NAME}"
