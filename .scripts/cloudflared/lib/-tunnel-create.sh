@@ -27,4 +27,7 @@ _cloudflared_tunnel_create() {
         cloudflared tunnel create --output json "${CLOUDFLARED_TUNNEL_NAME}"
     )
     echo "${RESPONSE}" >"${DIR_CLOUDFLARED_LOCAL_STORAGE}/${CLOUDFLARED_TUNNEL_NAME}.json"
+
+    local CONFIG_YAML=
+
 }
