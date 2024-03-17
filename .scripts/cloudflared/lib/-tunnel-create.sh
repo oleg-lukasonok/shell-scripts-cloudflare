@@ -17,7 +17,7 @@ _cloudflared_tunnel_create() {
     then
         local MESSAGE="Provide cloudflared tunnel name"
 
-        echo "${MESSAGE}\n> " >&2
+        echo -n "${MESSAGE}\n> " >&2
 
         read CLOUDFLARED_TUNNEL_NAME
     fi
