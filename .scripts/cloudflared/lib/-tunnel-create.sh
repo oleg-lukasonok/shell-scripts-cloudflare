@@ -28,6 +28,21 @@ _cloudflared_tunnel_create() {
     )
     echo "${RESPONSE}" >"${DIR_CLOUDFLARED_LOCAL_STORAGE}/${CLOUDFLARED_TUNNEL_NAME}.json"
 
-    local CONFIG_YAML=
+    local TUNNEL_ID=$(
+        echo "${RESPONSE}" | jq -r '.id'
+    )
+
+    local CONFIG_YAML='
+    tunnel: <UUID>
+    credentials-file: /root/.cloudflared/<UUID>.json
+
+    ingress:
+        - hostname: <domain>
+            service: https://localhost:8006
+            originRequest:
+                disableChunkedEncoding: true
+                noTLSVerify: true
+        - service: http_status:404
+    '
 
 }

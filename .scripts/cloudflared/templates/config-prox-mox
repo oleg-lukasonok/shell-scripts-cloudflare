@@ -1,0 +1,10 @@
+tunnel: PLA
+credentials-file: /root/.cloudflared/<UUID>.json
+
+ingress:
+  - hostname: pve.aiap-cloud.eu
+    service: https://localhost:8006
+    originRequest:
+       disableChunkedEncoding: true
+       noTLSVerify: true
+  - service: http_status:404
